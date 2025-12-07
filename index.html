@@ -20,17 +20,7 @@ PureLander : The best affordable landing page generator
         <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <script>
-  // Grab the URL parameter, e.g. ?loc=Texas
-  const urlParams = new URLSearchParams(window.location.search);
-  const loc = urlParams.get("loc");
 
-  // If a location parameter exists, update the text
-  if (loc) {
-    document.getElementById("location").textContent = loc;
-  }
-</script>
-    
 </head>
 <body>
 <div class="containerHeader">
@@ -49,7 +39,7 @@ PureLander : The best affordable landing page generator
 <div> <button onclick=" window.open('tel:855-625-3549')">Call to Start Now</button>
 <div class="trusted"><img class="img-responsive center-block" src="" /></div>
 </div>
-<p>Get an Affordable, Convenient and Simple Commercial Insurance Quote in Minutes! {{LOCATION}}</p>
+<p>Get an Affordable, Convenient and Simple Commercial Insurance Quote in Minutes!</p>
 <h2>Get Started Finding Business Insurance in <span id="location">Your Area</span>.</h2>
 <p>Let&rsquo;s start by defining a commercial vehicle: It&rsquo;s any vehicle used for business purposes. Commercial auto insurance&mdash;also referred to as commercial vehicle insurance, business c insurance, or business auto insurance&mdash;is the policy that protects any vehicle you use in the course of business.</p>
 <h2>Here's How You Do It:</h2>
@@ -87,7 +77,17 @@ PureLander : The best affordable landing page generator
 </ul>
 &copy; 2025 novelideasgroup.com  All rights reserved.</footer></div>
 </div>
- 
+  <script>
+  // Grab the URL parameter, e.g. ?loc=Texas
+  const urlParams = new URLSearchParams(window.location.search);
+  const loc = urlParams.get("loc");
+
+  // If a location parameter exists, update the text
+  if (loc) {
+    document.getElementById("location").textContent = loc;
+  }
+</script>
+    
 </body>
 <!-- This landing page has been Generated using purelander.com -->
 </html>
